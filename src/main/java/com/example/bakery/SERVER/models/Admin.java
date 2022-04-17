@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModelProperty;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 
@@ -29,7 +28,6 @@ import javax.persistence.*;
 )
 
 @Entity
-@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "admin")
@@ -64,7 +62,7 @@ public class Admin {
     @Column(name = "password", length = 30)
     @ApiModelProperty("hash of password")
     @JsonIgnore
-    public String password_hash;
+    public String password;
 
     @NotNull
     @Column(name = "link", length = 30)
