@@ -1,4 +1,4 @@
-package com.example.bakery.SERVER.configuration;
+package com.example.bakery.SERVER.securingweb;
 
 import java.util.function.Predicate;
 import org.springframework.context.annotation.Bean;
